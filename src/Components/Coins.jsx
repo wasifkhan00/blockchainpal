@@ -829,9 +829,9 @@ function Coins(props) {
               {props.bodyOne}
             </td>
             <td>{props.bodyTwo}</td>
-            <td>{`$${btcPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${btcPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${btcPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${btcPrices.currentPrice?btcPrices.currentPrice.toLocaleString():"Failed to load Data"}`}</td>
+            <td>{`$${btcPrices.marketCapital?btcPrices.marketCapital.toLocaleString():"Failed to load Data"}`}</td>
+            <td>{`$${btcPrices.TFHVol?btcPrices.TFHVol.toLocaleString():"Failed to load Data"}`}</td>
           </tr>
 
           <tr onClick={functionForEth}>
@@ -844,9 +844,21 @@ function Coins(props) {
               {props.secondBodyOne}
             </td>
             <td>{props.secondBodyTwo}</td>
-            <td>{`$${ethPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${ethPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${ethPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              ethPrices.currentPrice
+                ? ethPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              ethPrices.marketCapital
+                ? ethPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              ethPrices.TFHVol
+                ? ethPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForTeth}>
@@ -859,9 +871,21 @@ function Coins(props) {
               {props.thirdBodyOne}
             </td>
             <td>{props.thirdBodyTwo}</td>
-            <td>{`$${tethPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${tethPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${tethPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              tethPrices.currentPrice
+                ? tethPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              tethPrices.marketCapital
+                ? tethPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              tethPrices.TFHVol
+                ? tethPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForCard}>
@@ -874,9 +898,21 @@ function Coins(props) {
               {props.fourthBodyOne}
             </td>
             <td>{props.fourthBodyTwo}</td>
-            <td>{`$${cardPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${cardPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${cardPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              cardPrices.currentPrice
+                ? cardPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              cardPrices.marketCapital
+                ? cardPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              cardPrices.TFHVol
+                ? cardPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForMone}>
@@ -889,9 +925,21 @@ function Coins(props) {
               {props.fifthBodyOne}
             </td>
             <td>{props.fifthBodyTwo}</td>
-            <td>{`$${monPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${monPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${monPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              monPrices.currentPrice
+                ? monPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              monPrices.marketCapital
+                ? monPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              monPrices.TFHVol
+                ? monPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForSola}>
@@ -904,9 +952,21 @@ function Coins(props) {
               {props.sixthBodyOne}
             </td>
             <td>{props.sixthBodyTwo}</td>
-            <td>{`$${solPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${solPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${solPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              solPrices.currentPrice
+                ? solPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              solPrices.marketCapital
+                ? solPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              solPrices.TFHVol
+                ? solPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForDai}>
@@ -919,9 +979,21 @@ function Coins(props) {
               {props.seventhBodyOne}
             </td>
             <td>{props.seventhBodyTwo}</td>
-            <td>{`$${daiPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${daiPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${daiPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              daiPrices.currentPrice
+                ? daiPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              daiPrices.marketCapital
+                ? daiPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              daiPrices.TFHVol
+                ? daiPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForPolk}>
@@ -934,9 +1006,21 @@ function Coins(props) {
               {props.eighthBodyOne}
             </td>
             <td>{props.eighthBodyTwo}</td>
-            <td>{`$${polPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${polPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${polPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              polPrices.currentPrice
+                ? polPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              polPrices.marketCapital
+                ? polPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              polPrices.TFHVol
+                ? polPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForTron}>
@@ -949,9 +1033,21 @@ function Coins(props) {
               {props.ninthBodyOne}
             </td>
             <td>{props.ninthBodyTwo}</td>
-            <td>{`$${tronPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${tronPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${tronPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              tronPrices.currentPrice
+                ? tronPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              tronPrices.marketCapital
+                ? tronPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              tronPrices.TFHVol
+                ? tronPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForLite}>
@@ -964,9 +1060,21 @@ function Coins(props) {
               {props.tenthBodyOne}
             </td>
             <td>{props.tenthBodyTwo}</td>
-            <td>{`$${ltcPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${ltcPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${ltcPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              ltcPrices.currentPrice
+                ? ltcPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              ltcPrices.marketCapital
+                ? ltcPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              ltcPrices.TFHVol
+                ? ltcPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForChain}>
@@ -979,9 +1087,21 @@ function Coins(props) {
               {props.eleventhBodyOne}
             </td>
             <td>{props.eleventhBodyTwo}</td>
-            <td>{`$${chainPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${chainPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${chainPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              chainPrices.currentPrice
+                ? chainPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              chainPrices.marketCapital
+                ? chainPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              chainPrices.TFHVol
+                ? chainPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForCosmos}>
@@ -994,9 +1114,21 @@ function Coins(props) {
               {props.twelvethBodyOne}
             </td>
             <td>{props.twelvethBodyTwo}</td>
-            <td>{`$${cosmosPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${cosmosPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${cosmosPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              cosmosPrices.currentPrice
+                ? cosmosPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              cosmosPrices.marketCapital
+                ? cosmosPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              cosmosPrices.TFHVol
+                ? cosmosPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForUniswap}>
@@ -1009,9 +1141,21 @@ function Coins(props) {
               {props.thirteenthBodyOne}
             </td>
             <td>{props.thirteenthBodyTwo}</td>
-            <td>{`$${uniPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${uniPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${uniPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              uniPrices.currentPrice
+                ? uniPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              uniPrices.marketCapital
+                ? uniPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              uniPrices.TFHVol
+                ? uniPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForFantom}>
@@ -1024,9 +1168,21 @@ function Coins(props) {
               {props.fourteenthBodyOne}
             </td>
             <td>{props.fourteenthBodyTwo}</td>
-            <td>{`$${fantPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${fantPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${fantPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              fantPrices.currentPrice
+                ? fantPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              fantPrices.marketCapital
+                ? fantPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              fantPrices.TFHVol
+                ? fantPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
 
           <tr onClick={functionForIota}>
@@ -1039,9 +1195,21 @@ function Coins(props) {
               {props.fifteenthBodyOne}
             </td>
             <td>{props.fifteenthBodyTwo}</td>
-            <td>{`$${iotaPrices.currentPrice.toLocaleString()}`}</td>
-            <td>{`$${iotaPrices.marketCapital.toLocaleString()}`}</td>
-            <td>{`$${iotaPrices.TFHVol.toLocaleString()}`}</td>
+            <td>{`$${
+              iotaPrices.currentPrice
+                ? iotaPrices.currentPrice.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              iotaPrices.marketCapital
+                ? iotaPrices.marketCapital.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
+            <td>{`$${
+              iotaPrices.TFHVol
+                ? iotaPrices.TFHVol.toLocaleString()
+                : "Failed to load Data"
+            }`}</td>
           </tr>
         </tbody>
       </table>

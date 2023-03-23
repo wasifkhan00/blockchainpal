@@ -33,7 +33,7 @@
   color: rgb(255, 255, 255);
 }
 
-.listAndButtonsTogether{
+.listAndButtonsTogether {
   display: flex;
   width: 70vw;
   justify-content: space-around;
@@ -239,7 +239,6 @@ a.active {
   border-collapse: collapse;
   font-size: 0.9rem;
   width: 100vw !important;
- 
 }
 
 .table thead tr {
@@ -285,7 +284,7 @@ a.active {
   background-size: cover;
   color: white;
   width: 100%;
-  height:100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,8 +387,10 @@ h2 {
 /* Body End */
 
 .footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.672), rgba(0, 0, 0, 0.672)),
-    url("./Components/Images/footer.jpg");
+  background: linear-gradient(180deg, rgb(4, 80, 94), rgb(3, 59, 57));
+
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.672), rgba(0, 0, 0, 0.672)), */
+  /* url("./Components/Images/footer.jpg"); */
   display: flex;
   color: rgb(250, 250, 250);
   background-position: center;
@@ -403,7 +404,6 @@ h2 {
 }
 
 .footerInside {
-
   display: flex;
   justify-content: space-around;
   font-size: 12px;
@@ -416,11 +416,11 @@ h2 {
   margin: 1rem 0;
 }
 
-
-.box1,.box2,.box3{
+.box1,
+.box2,
+.box3 {
   /* background: red; */
   overflow: hidden !important;
-
 }
 
 .footer h5 {
@@ -481,97 +481,84 @@ h2 {
 /* Responsve Code*/
 
 @media screen and (max-width: 1340px) {
-  .table{
+  .table {
     display: block;
-    overflow-x:auto;
-  
+    overflow-x: auto;
   }
 }
 @media screen and (max-width: 1098px) {
-
-
-  .footer{
+  .footer {
     height: 70vh;
   }
 
-  .box1{
+  .box1 {
     margin: 2rem 0;
   }
 
-  .box2{
+  .box2 {
     margin: 2rem;
   }
 
-  .box3 h5{
+  .box3 h5 {
     padding: 0;
     margin: 0;
   }
 
-  .footerInside{
+  .footerInside {
     font-size: 13px;
     flex-direction: column !important;
   }
 
-  .footer{
+  .footer {
     height: 79vh;
   }
-  
-.box2 h5 {
-  margin: 0rem 0;
-}
 
-.footer h5 {
-  font-size: 0.9rem;
-  text-align: center;
-}
+  .box2 h5 {
+    margin: 0rem 0;
+  }
 
+  .footer h5 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 860px) {
-
-
-.footerInside{
-  display: block;
-  margin-top: 7rem;
-}
+  .footerInside {
+    display: block;
+    margin-top: 7rem;
+  }
 
   .GalleryContainer {
     flex-direction: column;
     align-items: center;
   }
 
-.GalleryItems{
-  width: 70vw !important;
-  height: 45vh;
-  margin: 1rem 0;
-
-}
-
-.GalleryItems li{
-  font-size: 18px;
-}
-
-.GalleryItems p{
-  font-size: 15px;
-
+  .GalleryItems {
+    width: 70vw !important;
+    height: 45vh;
+    margin: 1rem 0;
   }
 
+  .GalleryItems li {
+    font-size: 18px;
+  }
 
+  .GalleryItems p {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 754px) {
-
-  
-.footer{
-  height: 99vh;
-  overflow: hidden;
-}
+  .footer {
+    height: 99vh;
+    overflow: hidden;
+  }
   * {
     font-size: 13px;
   }
-    
-.GalleryItems p{
-  font-size: 16px;
- 
+
+  .GalleryItems p {
+    font-size: 16px;
   }
 
   .Navbar a {
@@ -586,84 +573,72 @@ h2 {
   .logOut {
     font-size: 11px;
   }
-  .listAndButtonsTogether{
+  .listAndButtonsTogether {
     width: 80vw;
   }
 }
 
 @media screen and (max-width: 600px) {
-
-
-
-  .container button{
+  .container button {
     font-size: 11px;
     padding: 5px 18px;
   }
-  
-  .GalleryItems{
+
+  .GalleryItems {
     width: 80vw !important;
-    
-    
   }
-  
-  .GalleryItems p{
+
+  .GalleryItems p {
     font-size: 15px;
   }
-  
-  
 }
 @media screen and (max-width: 532px) {
-
-  .GalleryItems{
-    width: 90vw !important;    
+  .GalleryItems {
+    width: 90vw !important;
   }
 
-  .GalleryItems p{
+  .GalleryItems p {
     font-size: 14px;
   }
 
-
-  .endFooter{
+  .endFooter {
     justify-content: space-between;
   }
-  
-.galleryItemIconsTwo {
-  width: 6vw;
-}
 
-.galleryItemIconsOne {
-  width: 10vw;
-}
+  .galleryItemIconsTwo {
+    width: 6vw;
+  }
 
-.galleryItemIconsThree {
-  width: 8vw;
-}
+  .galleryItemIconsOne {
+    width: 10vw;
+  }
+
+  .galleryItemIconsThree {
+    width: 8vw;
+  }
 }
 
 @media screen and (max-width: 569px) {
-
-
   #menuIcon {
     display: block;
   }
 
-  .btn  {
+  .btn {
     font-size: 11px;
-
   }
 
-  .pic{
+  .pic {
     height: 90vh;
     white-space: wrap;
   }
 
-  .pic h2{
+  .pic h2 {
     font-size: 2rem;
   }
-.pic p{
-  font-size: .8rem;
-}
-  .listAndButtonsTogether{
+  .pic p {
+    font-size: 0.8rem;
+  }
+  .listAndButtonsTogether {
     display: none;
     background: linear-gradient(45deg, rgb(4, 80, 94), rgb(11, 115, 110));
     height: 50vh;
@@ -679,27 +654,25 @@ h2 {
     justify-content: start;
   }
 
-  .Navbar ul{
+  .Navbar ul {
     flex-direction: column;
   }
 
-  .profileImage{
+  .profileImage {
     width: 35px;
   }
-.Navbar ul a{
-  margin: 1.5rem 0;
-  font-size: 1rem;
-
-}
-  .btn_inputContainer{
+  .Navbar ul a {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+  }
+  .btn_inputContainer {
     flex-direction: column;
   }
 
   .login,
   .darkAndLightMode,
   .login,
-  .logOut
-  {
+  .logOut {
     font-size: 1rem;
 
     padding: 0;
@@ -707,105 +680,91 @@ h2 {
     border-radius: 0;
     background: none;
     color: #fff !important;
-    outline:none;
+    outline: none;
   }
-
 
   .galleryItemIconsTwo {
     width: 7vw;
   }
-  
+
   .galleryItemIconsOne {
     width: 11vw;
   }
-  
+
   .galleryItemIconsThree {
     width: 9vw;
   }
-  
 }
 
 @media screen and (max-width: 374px) {
-.pic h2{
-  font-size: 1.8rem;
-}
-  .pic p{
-    font-size: .7rem;
+  .pic h2 {
+    font-size: 1.8rem;
   }
-.footer{
-  height: 90vh;
+  .pic p {
+    font-size: 0.7rem;
+  }
+  .footer {
+    height: 90vh;
+  }
+
+  .container button {
+    font-size: 9px !important;
+    padding: 4px 11px !important;
+    border-radius: 35px !important;
+  }
 }
-
-
-
-.container button{
-  font-size: 9px !important;
-  padding: 4px 11px !important;
-  border-radius:35px !important;
-}
-
-
-}
-
 
 @media screen and (max-width: 324px) {
-.pic h2{
-  font-size: 1.2rem;
-}
-  .pic p{
-    font-size: .6rem;
+  .pic h2 {
+    font-size: 1.2rem;
   }
-  
-.galleryItemIconsTwo {
-  width: 8vw;
-}
+  .pic p {
+    font-size: 0.6rem;
+  }
 
-.galleryItemIconsOne {
-  width: 12vw;
-}
+  .galleryItemIconsTwo {
+    width: 8vw;
+  }
 
-.galleryItemIconsThree {
-  width: 10vw;
-}
-.endFooter{
-  flex-direction: column;
-}
+  .galleryItemIconsOne {
+    width: 12vw;
+  }
 
+  .galleryItemIconsThree {
+    width: 10vw;
+  }
+  .endFooter {
+    flex-direction: column;
+  }
 
-
-.container button{
-  font-size: 8px !important;
-  padding: 4px 8px !important;
-  border-radius:25px !important;
-}
-
-
+  .container button {
+    font-size: 8px !important;
+    padding: 4px 8px !important;
+    border-radius: 25px !important;
+  }
 }
 
 @media screen and (max-width: 412px) {
-*{
-  font-size: 12px;
+  * {
+    font-size: 12px;
+  }
+
+  .GalleryItems {
+    width: 95vw;
+  }
+
+  .GalleryItems p {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 100vw !important;
+  }
+
+  .container button {
+    font-size: 10px;
+    padding: 5px 16px;
+  }
 }
-
-.GalleryItems{
-  width: 95vw;
-}
-
-.GalleryItems p{
-  font-size: 12px;
-}
-
-.container{
-  width: 100vw !important;
-}
-
-.container button{
-  font-size: 10px;
-  padding: 5px 16px;
-}
-
-
-}
-
 
 /* Responsve Code */
