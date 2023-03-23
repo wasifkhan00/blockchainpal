@@ -1,0 +1,811 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow-x: hidden;
+}
+/* NavBar Start */
+#checkbox {
+  display: none;
+}
+#menuIcon {
+  display: none;
+}
+
+.menuIconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar {
+  display: flex;
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  justify-content: space-around;
+  background: linear-gradient(45deg, rgb(4, 80, 94), rgb(11, 115, 110));
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #000;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+.listAndButtonsTogether{
+  display: flex;
+  width: 70vw;
+  justify-content: space-around;
+}
+
+.dark {
+  background: rgb(27, 27, 27) !important;
+  color: white;
+}
+
+.logo {
+  width: 85px;
+}
+
+#sec {
+  margin: 22rem auto;
+  background: red;
+}
+
+.profileImage {
+  width: 12%;
+  margin: 0 1rem;
+  border-radius: 50%;
+}
+
+.selectOption {
+  display: none;
+}
+
+.Navbar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+}
+
+.Navbar a {
+  margin: 0 1rem;
+  font-size: 13px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Navbar ul a:hover {
+  color: rgb(213, 98, 80);
+}
+
+a.active {
+  color: rgb(222, 220, 81);
+  font-weight: 800;
+}
+
+.login {
+  color: rgb(0, 0, 0) !important;
+  padding: 0.1rem 1.2rem;
+  background: #e2e2e2;
+  margin: 0 0.4rem;
+  border-radius: 22px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.logOut {
+  color: rgb(8, 8, 8) !important;
+  padding: 0.1rem 0.8rem;
+  background: #e2e2e2;
+  font-size: 0.9rem;
+  margin: 0 0.4rem;
+  border-radius: 22px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.darkAndLightMode {
+  color: rgb(0, 0, 0) !important;
+  padding: 0.1rem 1.2rem;
+  background: #e2e2e2;
+  margin: 0 0.4rem;
+  border-radius: 22px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login:hover,
+.darkAndLightMode:hover,
+.logOut:hover {
+  background: rgb(32, 32, 32);
+  color: rgb(251, 251, 251) !important;
+}
+
+.btn_inputContainer input {
+  margin: 0 1rem;
+  background: #eeeeee;
+  padding: 0.1rem 0.7rem;
+  width: 15vw;
+  outline: none;
+  border-radius: 2px;
+  border: 2px solid transparent;
+}
+
+.btn_inputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.inputAndSearchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.inputAndSearchContainer img {
+  cursor: pointer;
+}
+
+#hamburger {
+  display: none;
+}
+
+/* NavBar End */
+/* Body Start */
+
+.container {
+  margin: 0 auto;
+  width: 95vw !important;
+  margin-top: 3.3rem;
+  text-align: center;
+  padding: 0 2rem;
+  padding-top: 1.8rem;
+  border-radius: 6px;
+}
+
+.container button {
+  padding: 5px 20px;
+  background: rgb(203, 200, 195);
+  border-radius: 40px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  margin: 2.7rem 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.container button:hover {
+  background: #086568;
+  color: rgb(242, 237, 237);
+}
+
+.optionsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.optionsContainer select {
+  padding: 0.2rem 1rem;
+}
+
+#color {
+  outline: none;
+  width: 4vw;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#currencySelection {
+  width: 8vw;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  background: rgb(49, 150, 140);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+#currencySelection::-ms-expand {
+  display: none;
+}
+
+.colorC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.colorC label {
+  color: rgb(251, 245, 245);
+}
+/* Table  */
+
+.table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  width: 100vw !important;
+ 
+}
+
+.table thead tr {
+  background-color: rgb(17, 104, 112);
+  font-size: 16px !important;
+  color: white;
+}
+
+.table td,
+.table th {
+  padding: 1rem 5.9rem;
+}
+
+.table tr {
+  border: 1px solid rgb(8, 99, 132);
+  transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background: #10538e;
+  color: rgb(255, 255, 255);
+}
+
+.table td {
+  cursor: pointer;
+}
+
+.imgg {
+  width: 30px;
+  padding-right: 0.2rem;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+}
+/* Table  */
+
+.pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./Components/Images/respoI.jpg");
+  margin-top: 3.4rem;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic h2 {
+  color: rgb(218, 254, 255);
+  font-size: 40px;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.pic p {
+  font-size: 14px;
+  color: #e3e1e1;
+}
+
+.btn {
+  padding: 2px 25px;
+  margin: 1rem 0.4rem;
+  background: rgb(54, 107, 97);
+  border-radius: 2px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  color: rgb(253, 241, 241);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: rgb(11, 85, 128);
+}
+/* Gallery Start */
+
+.GalleryContainer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: linear-gradient(45deg, #1d1d1d, #323539);
+  border: 0.12px solid rgb(69, 68, 68);
+  color: #000;
+  width: 100vw;
+  padding: 2rem;
+}
+
+.galleryItemIconsTwo {
+  width: 5vw;
+  padding: 1rem 0;
+}
+
+.galleryItemIconsOne {
+  width: 9vw;
+  padding: 0.4rem 0;
+}
+
+.galleryItemIconsThree {
+  width: 7vw;
+  padding: 1.4rem 0;
+}
+
+.GalleryItems {
+  background: linear-gradient(45deg, #0f2027, #223c44, #2c5364);
+  border-top-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  color: rgb(180, 178, 178);
+  width: 100vw;
+  margin: 0 0.9rem;
+  overflow: hidden !important;
+  padding: 2rem;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.GalleryContainer a {
+  text-decoration: none;
+}
+
+.GalleryItems:hover {
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+.GalleryItems p {
+  font-size: 13px;
+  color: #b4c8ce;
+}
+
+h2 {
+  text-align: center;
+}
+
+.GalleryContainer li {
+  margin-bottom: 1rem;
+  list-style: none;
+  color: #0efca9c7;
+}
+/* Gallery End */
+/* Body End */
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.672), rgba(0, 0, 0, 0.672)),
+    url("./Components/Images/footer.jpg");
+  display: flex;
+  color: rgb(250, 250, 250);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 45vh;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.footerInside {
+
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.box2 h5 {
+  margin: 1rem 0;
+}
+
+
+.box1,.box2,.box3{
+  /* background: red; */
+  overflow: hidden !important;
+
+}
+
+.footer h5 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer p {
+  padding: 0.6rem 0;
+}
+
+.box1 a img {
+  width: 20px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.endFooter {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-around;
+  margin-top: 4rem;
+  border-top: 1px solid rgb(8, 99, 132);
+}
+
+/* Error Message */
+
+.errorMessage {
+  margin-top: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+  background: linear-gradient(45deg, rgb(189, 229, 237), rgb(200, 228, 226));
+}
+
+.errorBtn {
+  background-color: rgb(19, 19, 19);
+  padding: 4px 20px;
+  border: 2px solid transparent;
+  color: white;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 7px;
+}
+
+.errorBtn:hover {
+  background: rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+}
+/* Error Message */
+
+/* Responsve Code*/
+
+@media screen and (max-width: 1340px) {
+  .table{
+    display: block;
+    overflow-x:auto;
+  
+  }
+}
+@media screen and (max-width: 1098px) {
+
+
+  .footer{
+    height: 70vh;
+  }
+
+  .box1{
+    margin: 2rem 0;
+  }
+
+  .box2{
+    margin: 2rem;
+  }
+
+  .box3 h5{
+    padding: 0;
+    margin: 0;
+  }
+
+  .footerInside{
+    font-size: 13px;
+    flex-direction: column !important;
+  }
+
+  .footer{
+    height: 79vh;
+  }
+  
+.box2 h5 {
+  margin: 0rem 0;
+}
+
+.footer h5 {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+}
+@media screen and (max-width: 860px) {
+
+
+.footerInside{
+  display: block;
+  margin-top: 7rem;
+}
+
+  .GalleryContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.GalleryItems{
+  width: 70vw !important;
+  height: 45vh;
+  margin: 1rem 0;
+
+}
+
+.GalleryItems li{
+  font-size: 18px;
+}
+
+.GalleryItems p{
+  font-size: 15px;
+
+  }
+
+
+}
+
+@media screen and (max-width: 754px) {
+
+  
+.footer{
+  height: 99vh;
+  overflow: hidden;
+}
+  * {
+    font-size: 13px;
+  }
+    
+.GalleryItems p{
+  font-size: 16px;
+ 
+  }
+
+  .Navbar a {
+    font-size: 12px;
+  }
+  .Navbar ul a {
+    font-size: 11px;
+  }
+
+  .darkAndLightMode,
+  .login,
+  .logOut {
+    font-size: 11px;
+  }
+  .listAndButtonsTogether{
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+  .container button{
+    font-size: 11px;
+    padding: 5px 18px;
+  }
+  
+  .GalleryItems{
+    width: 80vw !important;
+    
+    
+  }
+  
+  .GalleryItems p{
+    font-size: 15px;
+  }
+  
+  
+}
+@media screen and (max-width: 532px) {
+
+  .GalleryItems{
+    width: 90vw !important;    
+  }
+
+  .GalleryItems p{
+    font-size: 14px;
+  }
+
+
+  .endFooter{
+    justify-content: space-between;
+  }
+  
+.galleryItemIconsTwo {
+  width: 6vw;
+}
+
+.galleryItemIconsOne {
+  width: 10vw;
+}
+
+.galleryItemIconsThree {
+  width: 8vw;
+}
+}
+
+@media screen and (max-width: 569px) {
+
+
+  #menuIcon {
+    display: block;
+  }
+
+  .btn  {
+    font-size: 11px;
+
+  }
+
+  .pic{
+    height: 90vh;
+    white-space: wrap;
+  }
+
+  .pic h2{
+    font-size: 2rem;
+  }
+.pic p{
+  font-size: .8rem;
+}
+  .listAndButtonsTogether{
+    display: none;
+    background: linear-gradient(45deg, rgb(4, 80, 94), rgb(11, 115, 110));
+    height: 50vh;
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    padding-top: 2.9rem;
+    top: 3.2rem;
+    text-align: center;
+    justify-content: start;
+  }
+
+  .Navbar ul{
+    flex-direction: column;
+  }
+
+  .profileImage{
+    width: 35px;
+  }
+.Navbar ul a{
+  margin: 1.5rem 0;
+  font-size: 1rem;
+
+}
+  .btn_inputContainer{
+    flex-direction: column;
+  }
+
+  .login,
+  .darkAndLightMode,
+  .login,
+  .logOut
+  {
+    font-size: 1rem;
+
+    padding: 0;
+    margin: 1.5rem 0;
+    border-radius: 0;
+    background: none;
+    color: #fff !important;
+    outline:none;
+  }
+
+
+  .galleryItemIconsTwo {
+    width: 7vw;
+  }
+  
+  .galleryItemIconsOne {
+    width: 11vw;
+  }
+  
+  .galleryItemIconsThree {
+    width: 9vw;
+  }
+  
+}
+
+@media screen and (max-width: 374px) {
+.pic h2{
+  font-size: 1.8rem;
+}
+  .pic p{
+    font-size: .7rem;
+  }
+.footer{
+  height: 90vh;
+}
+
+
+
+.container button{
+  font-size: 9px !important;
+  padding: 4px 11px !important;
+  border-radius:35px !important;
+}
+
+
+}
+
+
+@media screen and (max-width: 324px) {
+.pic h2{
+  font-size: 1.2rem;
+}
+  .pic p{
+    font-size: .6rem;
+  }
+  
+.galleryItemIconsTwo {
+  width: 8vw;
+}
+
+.galleryItemIconsOne {
+  width: 12vw;
+}
+
+.galleryItemIconsThree {
+  width: 10vw;
+}
+.endFooter{
+  flex-direction: column;
+}
+
+
+
+.container button{
+  font-size: 8px !important;
+  padding: 4px 8px !important;
+  border-radius:25px !important;
+}
+
+
+}
+
+@media screen and (max-width: 412px) {
+*{
+  font-size: 12px;
+}
+
+.GalleryItems{
+  width: 95vw;
+}
+
+.GalleryItems p{
+  font-size: 12px;
+}
+
+.container{
+  width: 100vw !important;
+}
+
+.container button{
+  font-size: 10px;
+  padding: 5px 16px;
+}
+
+
+}
+
+
+/* Responsve Code */
